@@ -1,0 +1,114 @@
+Q1)
+import java.util.Scanner;
+public class Q1 {
+    public static void  main(String[] args){
+        Scanner obj=new Scanner(System.in);
+        System.out.print("Input first number: ");
+        int first_number=obj.nextInt();
+        System.out.print("Input second number: ");
+        int second_number=obj.nextInt();
+        System.out.print("Input third number: ");
+        int third_number=obj.nextInt();
+        System.out.print("Input fourth number: ");
+        int fourth_number=obj.nextInt();
+        if(first_number==second_number && second_number==third_number && third_number==fourth_number){
+            System.out.print("Numbers are equal!");
+        }
+        else{
+            System.out.print("Numbers are not equal!");
+        }
+    }
+}
+
+
+Q2)
+import java.util.Scanner;
+public class Q2 {
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        double first_number=obj.nextDouble();
+        System.out.print("Enter second number: ");
+        double second_number=obj.nextDouble();
+        if((first_number>0 &&  first_number<1) && (second_number>0 && second_number<1)){
+            System.out.print("true");
+        }
+        else{
+            System.out.print("false");
+        }
+    }
+}
+
+
+Q3)
+import java.util.Scanner;
+public class Q3 {
+    public static void main(String[] args)
+    {
+        boolean[][] array={{true,false,true},{false,true,false}};
+        for(int row_index = 0;row_index <array.length ;row_index++){
+            for(int column_index =  0;column_index < array[0].length;column_index++)
+            {
+                boolean arr=array[row_index][column_index];
+                String convert=String.valueOf(arr);
+                char result=convert.charAt(0);
+                System.out.print(result+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+
+
+Q4)
+import java.util.Scanner;
+public class Q4 {
+    public static void main(String[] args) {
+        int[][] array={{10,20,30},{40,50,60}};
+        for(int i=0;i<array[0].length;i++)
+        {
+            for(int j=0;j<array.length;j++)
+            {
+                System.out.print(array[j][i]+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+
+Q5)
+import java.util.Arrays;
+import java.util.Scanner;
+public class Q5 {
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        int[] array={1,4,17,7,25,3,100};
+        Arrays.sort(array);
+        System.out.print("Enter k largest elements you want: ");
+        int k=obj.nextInt();
+        System.out.println(array.length);
+        for(int i=array.length-1;i>=array.length-k;i--){
+            System.out.print(array[i]+" ");
+        }
+    }
+}
+
+
+Q6)
+import java.util.Arrays;
+import java.util.Scanner;
+public class Q5 {
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        int[] array={1,4,17,7,25,3,100};
+        Arrays.sort(array);
+        System.out.print("Enter k largest elements you want: ");
+        int k=obj.nextInt();
+        System.out.println(array.length);
+        for(int i=array.length-1;i>=array.length-k;i--){
+            System.out.print(array[i]+" ");
+        }
+    }
+}
